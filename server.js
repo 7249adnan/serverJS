@@ -24,6 +24,12 @@ app.listen(PORT, () => {
   });
 });
 
+app.get("/",(req,res)=>{
+
+  res.send("on Root Folder RESPONSE ");
+
+});
+
 app.post("/submitForm", (req, res) => {
   console.log("Name : " + req.body.firstName + "\n ### Data Inserting ..... ");
   console.log(" ### Data Inserted woo !!!");
